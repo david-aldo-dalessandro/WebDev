@@ -1,0 +1,28 @@
+body{
+    color:rgb(219, 13, 123);
+    background-color: rgb(204, 204, 204);
+    margin: 0 5% 0;
+}
+
+div.one{
+    display: inline-block;
+}
+
+div.two{
+    display: inline-block;
+    margin: 0 0 0 200px
+}
+
+div.three{
+   
+}
+
+ul{list-style-position: inside;}
+
+table{
+    display: inline-block;  
+    margin: 0 0 15px 0
+}
+
+
+
