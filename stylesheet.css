@@ -19,6 +19,20 @@ div.two{
 
 }
 
+.red_out{
+    color: red;
+}
+
+.green_out{
+    color: green;
+}
+
+
+.blue_out{
+    color: blue;
+}
+
+
 ul{list-style-position: inside;}
 
 table{
