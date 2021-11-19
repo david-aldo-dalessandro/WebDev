@@ -21,19 +21,8 @@ function zoom_in(event){
 
     event.stopPropagation();
 
-    //target.classList.add("expanded");    
-    let width = target.width;
-    let height = target.height;
-
-    if(width<400){
-    console.log(width);
-     width += (width*.25);
-     height += (height *.25);
-    target.width = width;
-    target.height = height;
-    }
-   
-
+    target.classList.add("expanded");     
+    target.classList.remove("shrink");
 }
 
 function zoom_out(event){
@@ -41,17 +30,8 @@ function zoom_out(event){
 
     event.stopPropagation();
 
-    //target.classList.remove("expanded");
-
-    let width = target.width;
-    let height = target.height;
-    if(width>250){
-    console.log(width);
-     width = width/1.25;
-     height = height/1.25;
-    target.width = width;
-    target.height = height;
-    }
+    target.classList.add("shrink");
+    target.classList.remove("expanded"); 
 }
 
 function click_on(event){

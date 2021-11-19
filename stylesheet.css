@@ -38,10 +38,19 @@ table.cars, th.cars, tr.cars, td.cars{
     border-spacing: 0;
 }
 
+input[type='number']{
+    width: 40px;
+}
+
 .expanded{
     transition: transform .3s;
-    transform: scale(1.4);
+    transform: scale(1.5);
 
+}
+
+.shrink{
+    transition: transform .3s;
+    transform: scale(1);
 }
 
 .red_out{
