@@ -3,19 +3,44 @@ body{
     background-color: rgb(204, 204, 204);
     margin: 0 5% 0;
 }
-
-div.one{
-    display: inline-block;
+h1.shopping, h2.shopping{
+    text-align: center;
 }
 
-div.two{
+div.checkerBoard{
     display: inline-block;
     margin: 0 0 0 200px
 }
 
+table, th, tr, td{ 
+    margin: 15px;
+    width: auto;
+    padding: 6px;
+    border: 2px solid black;
+    border-spacing: 2px solid black;
+    
+
+}
+
+table.RGB, th.RGB, tr.RGB, td.RGB{ 
+    padding: 10px solid black;
+    border-spacing: 5px solid black;
+    width: 155px;
+    border: 2px solid black;
+
+}
+
+table.cars, th.cars, tr.cars, td.cars{
+    margin: 0;
+    width: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+}
+
 .expanded{
-    width: 400px;
-    height: 250px;
+    transition: transform .3s;
+    transform: scale(1.4);
 
 }
 

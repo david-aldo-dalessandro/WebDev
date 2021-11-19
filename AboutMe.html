@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-<head>
+<head class="documentHead">
 
-<title>
+<title class="documentTitle">
     David's About Me
 </title>
 
 <link rel="stylesheet" href="stylesheet.css">
 <script src="script.js"></script>
- 
 
 </head>
+<body class="documentBody">
+    <h1 class="aboutMe">  About Me  </h1>
+    
+    <div class="navigator">
+        <a href="AboutMe.html"> <button>About Me</button> </a>
+        <a href="shoppingCart.html"> <button> Shopping Cart</button> </a>
 
-<body >
+    </div>
 
-    <h1 >  About Me  </h1>
-    <p> Here is some stuff I enjoy:
-        
-        <ul>
+    <p class="paragraphIntroI"> Here is some stuff I enjoy:      
+        <ul class="listInterests">
             <li>video games</li>
             <li>cars as well</li>
             <li>I would say I like food, but who doesn't</li>
@@ -26,77 +29,66 @@
         </ul>    
         </p> 
        
-        <p>
+        <p class="paragraphIntroII">
         Did you know, images are just matrices of numbers representing pixel values for RGB intensity?
 
     
-        <table class="RGB" border="2" width="150" cellpadding="5" cellspacing="5">
+        <table class="RGB" >
 
-            <tr>
-            <th colspan="1" > <div class="R"> R </div>  </th>
-            <th colspan="1">  <div class="G"> G </div> </th>
-            <th colspan="1">  <div class="B"> B </div> </th>
+            <tr class="RGB">
+            <th class="RGB" colspan="1" > <div class="R"> R </div>  </th>
+            <th class="RGB" colspan="1">  <div class="G"> G </div> </th>
+            <th class="RGB" colspan="1">  <div class="B"> B </div> </th>
             </tr>   
-            <tr>
-                <td > <div class="R"> 010 101 010 </div></td> 
-                <td > <div class="G"> 010 101 010 </div> </td> 
-                <td > <div class="B"> 010 101 010 </div> </td>  
+            <tr class="RGB">
+                <td class="RGB"> <div class="R"> 010 101 010 </div></td> 
+                <td class="RGB"> <div class="G"> 010 101 010 </div> </td> 
+                <td class="RGB"> <div class="B"> 010 101 010 </div> </td>  
             </tr>    
         </table>
-        <div class="two">
+        <div class="checkerBoard">
         <img src="images\board.png" alt="A checkerboard pattern" title="A checkerboard matching the tables alternating high and low RGB values"/>
          </div >
         
     </p>
 
-
-
-    <div class="three">
-    <h2> Let's look at my cars tier list</h2>
-    <p>
-
-            
-
-        <ol>
-            <table>
-            <tr>
-                <td>
-                     <li> Subaru Impreza WRX STI</li>
-                     <img class="car" src="images\subaru.png" alt="A 2004 Subaru Impreza Wrx STI" title="An STI finished in WR Blue and fitted with gold BBS wheels." width="250" height="150"/>
+    <h2 class="carListHeading"> Let's look at my cars tier list</h2>
+        <ol class="carList">
+            <table class="cars">
+            <tr class="cars">
+                <td class="cars">
+                    <li> Subaru Impreza WRX STI</li>
+                    <img class="car" src="images\subaru.png" alt="A 2004 Subaru Impreza Wrx STI" title="An STI finished in WR Blue and fitted with gold BBS wheels." width="250" height="150"/>
                 </td>
-                <td>
-                     <li> Mitsubish Lancer Evolution VI</li>
+                <td class="cars">
+                    <li> Mitsubish Lancer Evolution VI</li>
                     <img class="car" src="images\evo.png" alt="A 1999 Mistubishi Lancer Evolution VI" title="An Evo finished in Innsbruck White and fitted with grey Oz SuperTurismo wheels" width="250" height="150"/>
-                 </td>
-             </tr>
-        
+                </td>
+            </tr>
 
-            <tr>
-                <td>
+            <tr class="cars">
+                <td class="cars">
                     <li> Mazda MX5 Miata </li>
-                     <img class="car" src="images\miata.png" alt="Wow this is getting exhausting" title="Decaf zoom zoom" width="250" height="150"/>
+                    <img class="car" src="images\miata.png" alt="Wow this is getting exhausting" title="Decaf zoom zoom" width="250" height="150"/>
                 </td>   
-                <td>
+                <td class="cars">
                     <li> Maxda RX-7 FD</li>
                     <img  class="car" src="images\rx7.png" alt="So much car" title="Zoom zoom" width="250" height="150"/>
                  </td>   
-             </tr>
-             <tr>
-                 <td>
+            </tr>
+            <tr class="cars">
+                 <td class="cars">
                     <li> Nissan Silvia (S13)  </li>
                     <img  class="car" src="images\s13.png" alt="Much speed" title="Drift King" width="250" height="150"/>
                 </td>
-                <td>
+                <td class="cars">
                     <li> Toyota Supra  </li>
                     <img  class="car" src="images\supra.png" alt="BAHHHH" title="Mo Powah' Baybuh" width="250" height="150"/>
                 </td>
             </tr>
 
-        </table>
+            </table>
         </ol>
-
-    </p>
-</div>
 
 </body>
 

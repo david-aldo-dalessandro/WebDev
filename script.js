@@ -5,34 +5,53 @@ window.onload = function(){
     
 
     for (let image of images){
-        image.addEventListener("mouseover", over_on);
-        image.addEventListener("mouseout", over_off);
+        image.addEventListener("mouseover", zoom_in);
+        image.addEventListener("mouseout", zoom_out);
     }
 
     for (let letter of letters){
         letter.addEventListener("click", click_on);
     }
 
-
-    
-
 }
 
-function over_on(event){
+function zoom_in(event){
 
     let target = event.currentTarget;
 
     event.stopPropagation();
-    
-    target.classList.add("expanded");    
+
+    //target.classList.add("expanded");    
+    let width = target.width;
+    let height = target.height;
+
+    if(width<400){
+    console.log(width);
+     width += (width*.25);
+     height += (height *.25);
+    target.width = width;
+    target.height = height;
+    }
+   
+
 }
 
-function over_off(event){
+function zoom_out(event){
     let target = event.currentTarget;
 
     event.stopPropagation();
 
-    target.classList.remove("expanded");
+    //target.classList.remove("expanded");
+
+    let width = target.width;
+    let height = target.height;
+    if(width>250){
+    console.log(width);
+     width = width/1.25;
+     height = height/1.25;
+    target.width = width;
+    target.height = height;
+    }
 }
 
 function click_on(event){
