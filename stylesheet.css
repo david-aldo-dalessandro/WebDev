@@ -3,9 +3,6 @@ body{
     background-color: rgb(204, 204, 204);
     margin: 0 5% 0;
 }
-h1.shopping, h2.shopping{
-    text-align: center;
-}
 
 div.checkerBoard{
     display: inline-block;

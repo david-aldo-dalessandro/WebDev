@@ -4,7 +4,7 @@
 <head>
     <title> Shopping Cart</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script>
+   
 </head>
 
 <body>
@@ -18,39 +18,39 @@
     <h2 class="shopping"> Items For Sale</h2>
 
     <table class="itemsForSale">
-        <tr class="itemsForSale">  
+        <tr class="item">  
             <th> </th>
             <th> Item </th>
             <th> Description </th>
             <th> Price</th>
             <th> </th>
         </tr>
-        <tr class"rowOne">
-            <th><img class="storeImage" src="images\Store\exhaust.png" width="115" height="100"/></th>
-            <th> Exhaust </th>
-            <th> Turbo XS Cat Back Exhaust for 2004-2007 STI</th>
-            <th> $589.65</th>
+        <tr class"itemRow">
+            <th class="itemImg"><img class="storeImage" src="images\Store\exhaust.png" width="115" height="100"/></th>
+            <th class="itemName"> Exhaust </th>
+            <th class="itemDescription"> Turbo XS Cat Back Exhaust for 2004-2007 STI</th>
+            <th class="itemPrice"> $589.65</th>
             <th> <button class="Add"> Add to cart </button></th>
         </tr>
-        <tr class"rowTwo">
-            <th><img class="storeImage" src="images\Store\mudflaps.png" width="115" height="100"/></th>
-            <th> Mudflaps </th>
-            <th>RallyArmor mudflaps with mounting hardware included</th>
-            <th>$120.00</th>
+        <tr class"itemRow">
+            <th class="itemImg"><img class="storeImage" src="images\Store\mudflaps.png" width="115" height="100"/></th>
+            <th class="itemName"> Mudflaps </th>
+            <th class="itemDescription">RallyArmor mudflaps with mounting hardware included</th>
+            <th class="itemPrice">$120.00</th>
             <th> <button class="Add"> Add to cart </button></th>
         </tr>
-        <tr class"rowThree">
-            <th><img class="storeImage" src="images\Store\wheels.png" width="115" height="90"/></th>
-            <th> Wheels </th>
-            <th>Stock 17" STI wheels (package of 4)</th>
-            <th>$1098.00</th>
+        <tr class"itemRow">
+            <th class="itemImg"><img class="storeImage" src="images\Store\wheels.png" width="115" height="90"/></th>
+            <th class="itemName"> Wheels </th>
+            <th class="itemDescription">Stock 17" STI wheels (package of 4)</th>
+            <th class="itemPrice">$1098.00</th>
             <th> <button class="Add"> Add to cart </button></th>
         </tr>
-        <tr class"rowFour">
-            <th><img class="storeImage" src="images\Store\tires.png" width="115" height="90"/></th>
-            <th> Tires </th>
-            <th> Hankook Ventus S1 H425 wheels in 225/45 R17 (package of 4)</th>
-            <th> $988.00</th>
+        <tr class"itemRow">
+            <th class="itemImg"><img class="storeImage" src="images\Store\tires.png" width="115" height="90"/></th>
+            <th class="itemName"> Tires </th>
+            <th class="itemDescription"> Hankook Ventus S1 H425 wheels in 225/45 R17 (package of 4)</th>
+            <th class="itemPrice"> $588.00</th>
             <th> <button class="Add"> Add to cart </button></th>
         </tr>
     </table>
@@ -58,20 +58,34 @@
     <h2 class="shopping"> Shopping Cart</h2>
 
     <table class="cart">
-        <tr class"cartRow">
+        <tr class="cartRow">
             <th class="cartItemImg"><img class="storeImage" src="images\Store\tires.png" width="115" height="90"/></th>
             <th class="cartItemName"> Tires </th>
             <th class="cartItemDescription"> Hankook Ventus S1 H425 wheels in 225/45 R17 (package of 4)</th>
-            <th class="cartItemPrice"> $988.00</th>
-            <th class="cartItemQuantity"> <input type="number" value="1"/> </th>
-            <th class="cartItemRemove"> <button class="Remove"> Remove from cart </button></th>
+            <th class="cartItemPrice"> $588.00</th>
+            <th class="cartItemQuantity"> <input class="cartItemQuantityInput" type="number" value="1"/> </th>
+            <th class="cartItemRemove"> <button class="remove"> Remove from cart </button></th>
         </tr>
-        <tr class="totalRow"> 
-            <th> Total</th>
-            <th> </th>
+        <tr class="cartRow">
+            <th class="cartItemImg"><img class="storeImage" src="images\Store\wheels.png" width="115" height="90"/></th>
+            <th class="cartItemName"> Wheels </th>
+            <th class="cartItemDescription"> Stock 17" STI wheels (package of 4)</th>
+            <th class="cartItemPrice"> $1098.00</th>
+            <th class="cartItemQuantity"> <input class="cartItemQuantityInput" type="number" value="1"/> </th>
+            <th class="cartItemRemove"> <button class="remove"> Remove from cart </button></th>
         </tr>
 
     </table>
 
+    <table >
+        <tr class="totalRow"> 
+            <th class="cartTotalRowHead"> Total</th>
+            <th class="cartTotalValue"> $1686</th>
+        </tr>
+    </table>
+
 </body>
+
+<script src="shopping.js"> async</script>
+
 </html>
