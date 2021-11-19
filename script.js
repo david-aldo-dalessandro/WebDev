@@ -10,7 +10,7 @@ window.onload = function(){
     }
 
     for (let letter of letters){
-        letter.addEventListener("click", click_on);
+        letter.addEventListener("mouseover", click_on);
     }
 
 }
