@@ -9,3 +9,6 @@ There are many things I would code differently today, but it contains all the fu
 ### Run the app
 
 Open the AboutMe.html from your file explorer with your browser of choice
+
+### Visit GHPage 
+Navigate to https://david-aldo-dalessandro.github.io/WebDev/index.html
